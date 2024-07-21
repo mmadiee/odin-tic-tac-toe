@@ -1,0 +1,17 @@
+/*  Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Colors */
+:root {
+    --font-color: #031A21;
+    --background: #FDFAFB;
+    --mark-one: #F18F01;
+    --mark-one-secondary: #FFE663;
+    --mark-two: #006E90;
+    --mark-two-secondary: #6ACDEB;
+}
+
+body{
+    background-color: var(--background);
+    font-family: "Poppins";
+}
