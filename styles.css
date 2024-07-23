@@ -1,17 +1,82 @@
 /*  Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* Colors */
 :root {
-    --font-color: #031A21;
-    --background: #FDFAFB;
-    --mark-one: #F18F01;
-    --mark-one-secondary: #FFE663;
-    --mark-two: #006E90;
-    --mark-two-secondary: #6ACDEB;
+  --font-color: #031a21;
+  --background: #fdfafb;
+  --mark-one: #006e90;
+  --mark-one-secondary: hsl(194, 100%, 20%);
+  --mark-two: #f18f01;  
+  --mark-two-secondary: hsl(36, 99%, 43%);
+
 }
 
-body{
-    background-color: var(--background);
-    font-family: "Poppins";
+body {
+  background-color: var(--background);
+  font-family: "Poppins";
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 5fr 0.5fr;
+}
+
+.start-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.start-buttons button {
+  width: 200px;
+  padding: 20px;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  color: var(--background);
+  font-size: medium;
+  font-weight: bold ;
+}
+
+.ai-button {
+  background-color: var(--mark-one);
+}
+
+.ai-button:hover {
+    background-color: var(--mark-one-secondary);
+  }
+
+.friend-button {
+    background-color: var(--mark-two);
+}
+
+.friend-button:hover {
+    background-color: var(--mark-two-secondary);
+}
+
+.logo {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--mark-one);
+  font-size: x-large;
+  font-weight: 900;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  color: var(--mark-one);
+  font-size: larger;
+  font-weight: bolder;
 }
