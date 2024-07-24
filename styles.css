@@ -15,7 +15,6 @@ body {
   background-color: var(--background);
   font-family: "Poppins";
   margin: 0;
-  color: var(--font-color);
 }
 
 .container {
@@ -31,7 +30,7 @@ body {
   gap: 2rem;
 }
 
-.start-button button{
+.start-button button {
   width: 200px;
   padding: 20px;
   border-radius: 50px;
@@ -62,18 +61,14 @@ body {
   font-weight: 900;
 }
 
-#home-screen {
-  display: none;
-}
-
 #player-setup {
   justify-content: center;
   gap: 2rem;
-
 }
 
 #player-setup h2 {
   margin: 0;
+  color: var(--font-color);
 }
 
 label {
@@ -84,7 +79,7 @@ label {
   gap: 1rem;
 }
 
-.radio-buttons{
+.radio-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,15 +114,113 @@ input[type="text"]:focus {
   color: var(--background);
   font-size: medium;
   font-weight: bold;
-}
-
-#player-setup button {
   background-color: var(--mark-one);
 }
 
 #player-setup button:hover {
   background-color: var(--mark-one-secondary);
 }
+
+#info {
+  text-align: center;
+}
+
+#info h2 {
+  margin-top: 0;
+  color: var(--font-color);
+}
+
+.score-board-score {
+  margin: 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.player-name {
+  font-size: x-large;
+}
+
+.score-board-score #player-info,
+.score-board-score #ai-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: x-large;
+  color: var(--font-color);
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 20px auto;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#round-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+#next-round{
+  width: 100px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  color: var(--background);
+  font-size: small;
+  font-weight: bold;
+  background-color: var(--mark-one);
+}
+
+#next-round:hover {
+  background-color: var(--mark-one-secondary);
+}
+
+#winner-modal {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#restart {
+  width: 100px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  color: var(--background);
+  font-size: small;
+  font-weight: bold;
+  background-color: var(--mark-two);
+}
+
+#restart:hover {
+  background-color: var(--mark-two-secondary);
+}
+
 
 footer {
   display: flex;

@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <main>
-        <div id="home-screen">
+        <div id="home-screen" style="display: grid;">
           <div class="logo">
             <img src="img/Icon.png" width="15%" alt="Tic Tac Toe Logo" />
             <h1><strong>Tic Tac Toe</strong></h1>
@@ -20,7 +20,8 @@
             <button id="vsAi" class="ai-button">Play VS AI</button>
           </div>
         </div>
-        <div id="player-setup" style="display: grid;">
+
+        <div id="player-setup" style="display: none;">
             <input type="text" id="player-name" placeholder="Enter your name">
             <h2>Choose your marker</h2>
             <div class = "radio-buttons">
@@ -34,6 +35,41 @@
                 </label>
             </div>
             <button id="start-game">Start Game</button>
+        </div>
+
+        <div id="game" style="display: none;">
+            <div id="info">
+                <div><h2 id="round-display">Round 1</h2></div>
+            </div>
+            <div class="score-board-score">
+                <div id="player-info">
+                    <div id="player-name-display" class="player-name">Player 1</div> 
+                    <div id="player-score">0</div>
+                </div>
+                <div id="board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+                <div id="ai-info">
+                    <div class="player-name">AI</div> 
+                    <div id="ai-score">0</div>
+                </div>
+            </div>
+            <div id="round-result">
+                <div id="result-message" style="display: none;"> Wins</div>
+                <button id="next-round" style="display: none;">Next Round</button>
+            </div>
+            <div id="winner-modal" style="display: none;">
+                <div id="winner-message">Winner</div>
+                <button id="restart">Rematch</button>
+            </div>
         </div>
       </main>
       <footer>Made by mmadiee 2024 ©</footer>
