@@ -6,16 +6,16 @@
   --font-color: #031a21;
   --background: #fdfafb;
   --mark-one: #006e90;
-  --mark-one-secondary: hsl(194, 100%, 20%);
-  --mark-two: #f18f01;  
-  --mark-two-secondary: hsl(36, 99%, 43%);
-
+  --mark-one-secondary: #004e66;
+  --mark-two: #f18f01;
+  --mark-two-secondary: #da8301;
 }
 
 body {
   background-color: var(--background);
   font-family: "Poppins";
   margin: 0;
+  color: var(--font-color);
 }
 
 .container {
@@ -25,13 +25,13 @@ body {
   align-items: center;
 }
 
-.start-buttons {
+.start-button {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
 
-.start-buttons button {
+.start-button button{
   width: 200px;
   padding: 20px;
   border-radius: 50px;
@@ -41,16 +41,16 @@ body {
   transition: all 0.3s ease;
   color: var(--background);
   font-size: medium;
-  font-weight: bold ;
+  font-weight: bold;
 }
 
 .ai-button {
-  background-color: var(--mark-one);
+  background-color: var(--mark-two);
 }
 
 .ai-button:hover {
-    background-color: var(--mark-one-secondary);
-  }
+  background-color: var(--mark-two-secondary);
+}
 
 .logo {
   display: flex;
@@ -60,6 +60,73 @@ body {
   color: var(--mark-one);
   font-size: x-large;
   font-weight: 900;
+}
+
+#home-screen {
+  display: none;
+}
+
+#player-setup {
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+#player-setup h2 {
+  margin: 0;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.radio-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  background: var(--background);
+  border: 1px solid var(--mark-one);
+  font-size: 16px;
+  height: 40px;
+  line-height: 24px;
+  padding: 7px 8px;
+  color: var(--font-color);
+  box-shadow: none;
+}
+
+input[type="text"]:focus {
+  background-color: #fff;
+  border-color: var(--mark-two);
+  box-shadow: 1px 1px 0 #006e90;
+}
+
+#player-setup button {
+  padding: 20px;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  color: var(--background);
+  font-size: medium;
+  font-weight: bold;
+}
+
+#player-setup button {
+  background-color: var(--mark-one);
+}
+
+#player-setup button:hover {
+  background-color: var(--mark-one-secondary);
 }
 
 footer {

@@ -11,14 +11,29 @@
   <body>
     <div class="container">
       <main>
-        <div class="home-screen">
+        <div id="home-screen">
           <div class="logo">
             <img src="img/Icon.png" width="15%" alt="Tic Tac Toe Logo" />
             <h1><strong>Tic Tac Toe</strong></h1>
           </div>
-          <div class="start-buttons">
+          <div class="start-button">
             <button id="vsAi" class="ai-button">Play VS AI</button>
           </div>
+        </div>
+        <div id="player-setup" style="display: grid;">
+            <input type="text" id="player-name" placeholder="Enter your name">
+            <h2>Choose your marker</h2>
+            <div class = "radio-buttons">
+                <label>
+                    <img src="img/X.svg" width="100" alt="X marker">
+                    <input type="radio" name="marker" value="X" checked>
+                </label>
+                <label>
+                    <img src="img/O.svg" width="100" alt="O marker">
+                    <input type="radio" name="marker" value="O"> 
+                </label>
+            </div>
+            <button id="start-game">Start Game</button>
         </div>
       </main>
       <footer>Made by mmadiee 2024 ©</footer>
