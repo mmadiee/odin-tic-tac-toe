@@ -158,15 +158,20 @@ input[type="text"]:focus {
   gap: 5px;
   margin: 20px auto;
 }
+
 .cell {
   width: 100px;
   height: 100px;
-  background-color: #f0f0f0;
+  border: 1px solid var(--font-color);
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 2em;
-  cursor: pointer;
+  align-items: center;
+}
+
+.cell-img {
+  width: 80%;
+  height: 80%;
+  display: none; /* Hide the image by default */
 }
 
 #round-result {
