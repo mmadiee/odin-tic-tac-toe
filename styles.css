@@ -52,14 +52,6 @@ body {
     background-color: var(--mark-one-secondary);
   }
 
-.friend-button {
-    background-color: var(--mark-two);
-}
-
-.friend-button:hover {
-    background-color: var(--mark-two-secondary);
-}
-
 .logo {
   display: flex;
   flex-direction: column;
